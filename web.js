@@ -1,63 +1,36 @@
-const glow = document.querySelector(".cursor-glow");
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".main-nav");
 
-let mouseX = 0;
-let mouseY = 0;
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
 
-let lastSparkle = 0;
-let activeSparkles = 0;
-const maxSparkles = 20;
-
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animate() {
-
-    glow.style.left = `${mouseX}px`;
-    glow.style.top = `${mouseY}px`;
-
-    const now = performance.now();
-
-    if (now - lastSparkle > 50 && activeSparkles < maxSparkles) {
-        createSparkle(mouseX, mouseY);
-        lastSparkle = now;
-    }
-
-    requestAnimationFrame(animate);
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
 }
 
-requestAnimationFrame(animate);
+const revealItems = document.querySelectorAll(".work-item, .fact, .timeline-item, .capability-layout, .about-contact, .home-note");
 
-function createSparkle(x, y) {
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-    activeSparkles++;
-
-    const sparkle = document.createElement("span");
-
-    sparkle.classList.add("sparkle");
-
-    const offsetX = (Math.random() - 0.5) * 24;
-    const offsetY = (Math.random() - 0.5) * 24;
-
-    const driftX = (Math.random() - 0.5) * 40;
-    const driftY = -(Math.random() * 30 + 15);
-
-    sparkle.style.left = `${x + offsetX}px`;
-    sparkle.style.top = `${y + offsetY}px`;
-
-    sparkle.style.setProperty("--drift-x", `${driftX}px`);
-    sparkle.style.setProperty("--drift-y", `${driftY}px`);
-
-    const size = Math.random() * 5 + 8;
-
-    sparkle.style.width = `${size}px`;
-    sparkle.style.height = `${size}px`;
-
-    document.body.appendChild(sparkle);
-
-    setTimeout(() => {
-        sparkle.remove();
-        activeSparkles--;
-    }, 1000);
+  revealItems.forEach((item) => {
+    item.classList.add("reveal");
+    revealObserver.observe(item);
+  });
+} else {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
 }

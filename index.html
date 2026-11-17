@@ -1,61 +1,116 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alvin Hadiewijaya</title>
-
-    <link rel="stylesheet" href="web.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f1eee7">
+  <meta name="description" content="Alvin Hadiewijaya — Independent Developer / Digital Thinker.">
+  <title>Alvin Hadiewijaya — Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="web.css">
 </head>
-<body>
+<body class="home-page">
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" aria-label="Alvin Hadiewijaya home">AH<span>.</span></a>
+    <div class="header-center">PORTFOLIO </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="About/about.html">About</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
 
-    <div class="cursor-glow"></div>
+  <main>
+    <section class="home-hero">
+      <div class="hero-copy">
+        <h1>Turning ideas into <em>digital experiences.</em></h1>
+        <div class="hero-bottom">
+          <p class="discipline"></p>
+          <a class="text-link" href="#selected-work">EXPLORE WORK <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Abstract blue glass and chrome sculpture">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-panel"></div>
+        <div class="glass-form glass-form-one"></div>
+        <div class="glass-form glass-form-two"></div>
+        <div class="glass-form glass-form-three"></div>
+      </div>
+    </section>
 
-    <header class="navbar">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="About/about.html">About</a>
-        </nav>
-    </header>
+    <section class="selected-work section-shell" id="selected-work">
+      <div class="section-heading">
+        <p><span class="section-mark"></span>SOFTWARE / DATA / AUTOMATION</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-item">
+          <a class="work-visual visual-data" aria-label="Explore data intelligence">
+            <div class="visual-dashboard">
+              <div class="dash-sidebar"><i></i><i></i><i></i><i></i></div>
+              <div class="dash-content">
+                <div class="dash-label">OVERVIEW / ANALYTICS</div>
+                <div class="dash-numbers"><b>Data</b><b>Clarity</b><b>Insight</b></div>
+                <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="chart-line"></div>
+              </div>
+            </div>
+            <div class="visual-orb"></div>
+          </a>
+          <h2>Data intelligence</h2>
+          <p>Finding the signal in complex information and turning it into clear direction.</p>
+        </article>
+        <article class="work-item">
+          <a class="work-visual visual-flow" aria-label="Explore workflow engineering">
+            <div class="flow-window">
+              <div class="flow-window-head"><i></i><i></i><i></i><span>WORKFLOW / STUDIO</span></div>
+              <div class="flow-node node-a"><b>01</b><span>INPUT</span></div>
+              <div class="flow-node node-b"><b>02</b><span>PROCESS</span></div>
+              <div class="flow-node node-c"><b>03</b><span>OUTPUT</span></div>
+              <div class="flow-connector connector-a"></div>
+              <div class="flow-connector connector-b"></div>
+              <div class="flow-status">SYSTEM FLOW <strong>● ACTIVE</strong></div>
+            </div>
+            <div class="flow-glow"></div>
+          </a>
+          <h2>Workflow engineering</h2>
+          <p>Making repetitive processes feel simpler, more reliable, and more human.</p>
+        </article>
+        <article class="work-item">
+          <a class="work-visual visual-code" aria-label="Explore software development">
+            <div class="code-window">
+              <div class="code-window-head"><i></i><i></i><i></i><span>IDEA / IMPLEMENTATION</span></div>
+              <div class="code-lines">
+                <span class="code-muted">01</span><b>function</b> <i>solve</i>() {
+                <span class="code-muted">02</span><span class="indent"><b>const</b> idea = <em>"possibility"</em>;</span>
+                <span class="code-muted">03</span><span class="indent"><b>return</b> idea.map(</span>
+                <span class="code-muted">04</span><span class="indent-two">value =&gt; value + <em>" purpose"</em></span>
+                <span class="code-muted">05</span><span class="indent">);</span>
+                <span class="code-muted">06</span>}
+              </div>
+              <div class="code-cursor"></div>
+            </div>
+            <div class="code-shape"></div>
+          </a>
+          <h2>Software development</h2>
+          <p>Building practical digital tools with care for function and experience.</p>
+        </article>
+      </div>
+    </section>
 
-    <main class="hero">
+    <section class="home-note section-shell">
+      <p class="note-statement">Good technology should feel <em>effortless.</em></p>
+    </section>
+  </main>
 
-    <div class="hero-left">
-
-    <p class="tagline reveal delay-1">
-        Information Technology • Data Management • Process Automation
-    </p>
-
-    <h1 class="reveal delay-2">
-        Alvin Hadiewijaya
-    </h1>
-
-    <p class="description reveal delay-3">
-        Information Technology with experience in data
-        processing, workflow automation, and web-based application
-        development.
-    </p>
-
-    <div class="buttons reveal delay-4">
-        <a
-    href="assets/Alvin-Hadiewijaya-CV.pdf"
-    download
-    class="btn primary"
->
-    Download Resume
-</a>
-        <a
-    href="https://wa.me/6287883411409"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="btn secondary"
->
-    Contact Me
-</a>
-
-</main>
-
-    <script src="web.js"></script>
-
+  <footer class="site-footer">
+    
+  </footer>
+  <script src="web.js"></script>
 </body>
 </html>

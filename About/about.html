@@ -1,165 +1,134 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Alvin Hadiewijaya</title>
-
-    <link rel="stylesheet" href="../web.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f1eee7">
+  <meta name="description" content="About Alvin Hadiewijaya — background, experience and capabilities.">
+  <title>About — Alvin Hadiewijaya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../web.css">
 </head>
-<body>
+<body class="about-page">
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" aria-label="Alvin Hadiewijaya home">AH<span>.</span></a>
+    <div class="header-center">ABOUT ME</div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
 
-    <div class="cursor-glow"></div>
-
-    <header class="navbar">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-        </nav>
-    </header>
-
-    <main class="about-section">
-
-    <div class="about-content">
-
-        <h1 class="reveal delay-2">
-            Tentang Saya
-        </h1>
-
-        <p class="description reveal delay-3">
-            Saya merupakan lulusan Teknik Informatika yang memiliki pengalaman
-            dalam pengolahan data, otomatisasi proses bisnis, serta
-            pengembangan aplikasi berbasis web. Saya terbiasa membangun solusi
-            digital untuk meningkatkan efisiensi kerja melalui pemanfaatan
-            Python, Flask, Microsoft Excel, dan berbagai integrasi sistem.
-        </p>
-
-        <p class="description reveal delay-3">
-            Saya memiliki ketertarikan pada analisis data, pemecahan masalah,
-            dan pengembangan workflow automation. Saya senang mengidentifikasi
-            akar permasalahan, merancang solusi yang efektif, serta menciptakan
-            sistem yang membantu mengurangi pekerjaan manual dan meningkatkan
-            kualitas operasional.
-        </p>
-
-        <div class="about-stats reveal delay-4">
-            <div class="stat-card">
-                <h3>26+</h3>
-                <span>Sistem Dikembangkan</span>
-            </div>
-
-            <div class="stat-card">
-                <h3>30+</h3>
-                <span>Skills</span>
-            </div>
-
-            <div class="stat-card">
-                <h3>1+</h3>
-                <span>Tahun Pengalaman</span>
-            </div>
-
+  <main>
+    <section class="about-intro section-shell">
+      <div class="about-kicker"><span></span><span>JAKARTA, INDONESIA</span></div>
+      <div class="about-intro-grid">
+        <div>
+          <h1>A curious mind, <em>a practical approach.</em></h1>
         </div>
-
-        <div class="skills reveal delay-4">
-            <span>Python</span>
-            <span>CSS</span>
-            <span>HTML</span>
-            <span>Excel</span>
-            <span>AI</span>
+        <div class="about-intro-copy">
+          <p>Saya merupakan lulusan Teknik Informatika yang memiliki pengalaman dalam pengolahan data, otomatisasi proses bisnis, serta pengembangan aplikasi berbasis web. Saya terbiasa membangun solusi digital untuk meningkatkan efisiensi kerja melalui pemanfaatan Python, Flask, Microsoft Excel, dan berbagai integrasi sistem.</p>
+          <p>Saya memiliki ketertarikan pada analisis data, pemecahan masalah, dan pengembangan workflow automation. Saya senang mengidentifikasi akar permasalahan, merancang solusi yang efektif, serta menciptakan sistem yang membantu mengurangi pekerjaan manual dan meningkatkan kualitas operasional.</p>
+          <a class="download-link" href="../assets/Alvin-Hadiewijaya-CV.pdf" download>DOWNLOAD RESUME <span>↓</span></a>
         </div>
+      </div>
+      <div class="about-abstract">
+        <div class="abstract-ring ring-a"></div>
+        <div class="abstract-ring ring-b"></div>
+        <div class="abstract-disc"></div>
+        <span class="abstract-caption">CURIOSITY → EXPERIMENT → IMPROVEMENT</span>
+      </div>
+    </section>
 
-    </div>
+    <section class="about-facts section-shell">
+      <div class="section-heading">
+        <p><span class="section-mark">/ /</span>History</p>
+        <span class="section-count">A FEW DETAILS</span>
+      </div>
+      <div class="facts-grid">
+        <div class="fact"><strong>28<span>+</span></strong><p>SYSTEMS DEVELOPED</p></div>
+        <div class="fact"><strong>15<span>+</span></strong><p>TECHNICAL SKILLS</p></div>
+        <div class="fact"><strong>1<span>+</span></strong><p>YEAR OF EXPERIENCE</p></div>
+        <div class="fact fact-note"><p>FOCUSED ON</p><strong>Useful ideas.<br><em>Thoughtful execution.</em></strong></div>
+      </div>
+    </section>
 
-    <section class="experience reveal delay-4">
-
-    <h2 class="section-title">
-        Pengalaman
-    </h2>
-
-    <div class="experience-grid">
-
-        <div class="experience-card">
-            <span class="experience-year">November 2025 - Sekarang</span>
-
-            <h3>National Bank NOBU</h3>
-
-            <p class="experience-role">
-                Collection Administration, Data Processing & Automation
-            </p>
-
-            <p class="experience-desc">
-              •  Mengelola dan memvalidasi data collection menggunakan Microsoft Excel untuk 
-                 mendukung operasional dan pelaporan.
-              <br><br>   
-              •  Menangani proses administrasi surat Collection, termasuk mail merge, pencetakan massal, pelipatan, pengemasan, dan 
-                 persiapan pengiriman dokumen, dengan volume ratusan hingga 1.000+ dokumen pada periode tertentu.
-              <br><br>
-              •  Mengembangkan berbagai tools internal berbasis Python dan Flask untuk mengotomatisasi 
-                 proses pengolahan data, dokumen, dan workflow operasional guna mengurangi pekerjaan 
-                 manual.
-              <br><br>
-              •  Membangun sistem otomatisasi dokumen, termasuk pembuatan PDF massal, validasi 
-                 dokumen, pengolahan data, dan email blast.
-              <br><br>
-              •  Mengembangkan dashboard monitoring dan reporting untuk membantu analisis data 
-                 operasional Collection, termasuk filtering data, monitoring periode, dan penyajian 
-                 informasi secara terstruktur.
-              <br><br>
-              •  Mengimplementasikan integrasi Google Drive API, Google Docs API, Outlook, OCR, 
-                 dan PDF Processing untuk mendukung workflow bisnis.
-              <br><br>
-              •  Melakukan analisis, validasi, dan rekonsiliasi data guna meningkatkan akurasi serta 
-                 kualitas data operasional.
-              <br><br>
-              •  Mengembangkan sistem monitoring, mapping, dan business process automation berbasis 
-                 Python, termasuk desktop monitoring system dengan PyQt6 untuk memproses data dari 
-                 berbagai sumber Excel, melakukan filtering, menganalisis perubahan data, serta memantau 
-                 ribuan data operasional secara otomatis.
-              <br><br>
-              •  Mengidentifikasi akar permasalahan pada proses kerja dan mengembangkan solusi 
-                 otomatisasi untuk meningkatkan efisiensi serta meminimalkan risiko kesalahan.
-            </p>
+    <section class="capabilities section-shell">
+      <div class="section-heading">
+        <p><span class="section-mark">/ /</span> TOOLKIT & CAPABILITIES</p>
+        <span class="section-count">TOOLS I WORK WITH</span>
+      </div>
+      <div class="capability-layout">
+        <h2>Curiosity is the<br><em>starting point.</em></h2>
+        <div class="skill-cloud">
+          <span>Python</span><span>Java</span><span>C#</span><span>HTML</span><span>CSS</span>
+          <span>JavaScript</span><span>Microsoft Excel</span>
+          <span>Data Processing</span><span>Automation</span>
+          <span>PDF Processing</span><span>OCR</span>
         </div>
+      </div>
+    </section>
 
-        <div class="experience-card">
-            <span class="experience-year">01 Juli 2024 - 30 September 2024</span>
+    <section class="experience-section section-shell">
+      <div class="section-heading">
+        <p><span class="section-mark">/ /</span> EXPERIENCE</p>
+        <span class="section-count">WHERE I'VE LEARNED & CONTRIBUTED</span>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">NOV 2025 — NOV 2026</div>
+          <div class="timeline-content">
+            <p class="timeline-role">Collection Administration, Data Processing & Automation</p>
+            <ul>
+              <li>Mengelola dan memvalidasi data collection menggunakan Microsoft Excel untuk mendukung operasional dan pelaporan.</li>
+              <li>Menangani proses administrasi surat Collection, termasuk mail merge, pencetakan massal, pelipatan, pengemasan, dan persiapan pengiriman dokumen, dengan volume ratusan hingga 1.000+ dokumen pada periode tertentu.</li>
+              <li>Mengembangkan berbagai tools internal berbasis Python dan Flask untuk mengotomatisasi proses pengolahan data, dokumen, dan workflow operasional guna mengurangi pekerjaan manual.</li>
+              <li>Membangun sistem otomatisasi dokumen, termasuk pembuatan PDF massal, validasi dokumen, pengolahan data, dan email blast.</li>
+              <li>Mengembangkan dashboard monitoring dan reporting untuk membantu analisis data operasional Collection, termasuk filtering data, monitoring periode, dan penyajian informasi secara terstruktur.</li>
+              <li>Mengimplementasikan integrasi Google Drive API, Google Docs API, Outlook, OCR, dan PDF Processing untuk mendukung workflow bisnis.</li>
+              <li>Melakukan analisis, validasi, dan rekonsiliasi data guna meningkatkan akurasi serta kualitas data operasional.</li>
+              <li>Mengembangkan sistem monitoring, mapping, dan business process automation berbasis Python, termasuk desktop monitoring system dengan PyQt6 untuk memproses data dari berbagai sumber Excel, melakukan filtering, menganalisis perubahan data, serta memantau ribuan data operasional secara otomatis.</li>
+              <li>Mengidentifikasi akar permasalahan pada proses kerja dan mengembangkan solusi otomatisasi untuk meningkatkan efisiensi serta meminimalkan risiko kesalahan.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">JUL 2024 — SEP 2024</div>
+          <div class="timeline-content">
+            <p class="timeline-role">Analyst Data & Pembuatan Desain Visualisasi Data</p>
+            <ul>
+              <li>Menganalisis data pencarian untuk mendukung strategi pemasaran produk.</li>
+              <li>Mendesain visualisasi data menggunakan Power BI untuk kebutuhan laporan internal.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">NOV 2023 — APR 2024</div>
+          <div class="timeline-content">
+            <p class="timeline-role">Hardware Installation & Software Setup</p>
+            <ul>
+              <li>Merakit PC dan menginstal perangkat keras serta lunak sesuai kebutuhan klien.</li>
+              <li>Menyelesaikan troubleshooting perangkat keras dan sistem operasi.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <h3>Indofood Bogasari</h3>
+    <section class="about-contact section-shell">
+      <h2>Let's make something <em>useful.</em></h2>
+      <a href="https://wa.me/6287883411409" target="_blank" rel="noopener noreferrer" class="text-link">LET'S CONNECT <span>↗</span></a>
+    </section>
+  </main>
 
-            <p class="experience-role">
-                Analyst Data & Pembuatan Desain Visualisasi Data
-            </p>
-
-            <p class="experience-desc">
-               •  Menganalisis data pencarian untuk mendukung strategi pemasaran produk.
-               <br><br>
-               •  Mendesain visualisasi data menggunakan Power BI untuk kebutuhan laporan internal.
-            </p>
-        </div>
-
-        <div class="experience-card">
-            <span class="experience-year">22 November 2023 - 30 April 2024</span>
-
-            <h3>MPSS Computer</h3>
-
-            <p class="experience-role">
-                Hardware Installation & Software Setup
-            </p>
-
-            <p class="experience-desc">
-               •  Merakit PC dan menginstal perangkat keras serta lunak sesuai kebutuhan klien.
-               <br><br>
-               •  Menyelesaikan troubleshooting perangkat keras dan sistem operasi.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-    <script src="../web.js"></script>
-
+  <footer class="site-footer">
+  </footer>
+  <script src="../web.js"></script>
 </body>
 </html>
